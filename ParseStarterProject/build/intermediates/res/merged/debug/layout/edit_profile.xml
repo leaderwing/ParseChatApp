@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7de793"
+    android:orientation="vertical">
+
+
+   <ImageView
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:id="@+id/imageView1"
+       android:src="@drawable/user_chat1"
+       android:layout_margin="10dp"
+
+       />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView1"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16sp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Name"
+                android:id="@+id/textView" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:editable="false"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16sp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Gender"
+                android:id="@+id/textView1" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner"
+                android:layout_weight="0.5"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16sp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Telephone"
+                android:id="@+id/textView2" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText3"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16sp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Email"
+                android:id="@+id/textView3" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText4"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16sp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Address"
+                android:id="@+id/textView4" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText5"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Change"
+                android:id="@+id/btnSave"
+                android:layout_marginTop="@dimen/pad_15dp"
+                android:layout_marginLeft="@dimen/pad_30dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="#57fa90"
+                android:textColor="#f9f5f5"
+                android:shadowColor="#4f6252"
+                android:clickable="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_marginTop="@dimen/pad_15dp"
+                android:id="@+id/btnCancel"
+                android:layout_marginRight="@dimen/pad_30dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:background="#57fa90"
+                android:textColor="#f9f5f5"
+                android:shadowColor="#4f6252"
+                android:clickable="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</RelativeLayout><!-- From: file:/D:/ParseProject/ParseStarterProject/src/main/res/layout/edit_profile.xml -->

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7de793"
+    android:orientation="vertical">
+   <ImageView
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:src="@drawable/user_chat2"
+       android:id="@+id/imageView"
+      android:layout_margin="10dp"
+
+       />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16sp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Name"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_weight="0.5"
+                android:layout_marginTop="0dp"
+                android:textSize="@dimen/txt_16sp"
+                android:text="Ngo Xuan Quy"
+                android:id="@+id/user_name"
+                android:layout_gravity="top|right"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16sp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Gender"
+                android:id="@+id/textView1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginTop="0dp"
+                android:textSize="@dimen/txt_16sp"
+                android:text="Male"
+                android:id="@+id/gender"
+                android:layout_gravity="top|right"
+                android:gravity="center|right" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16sp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Telephone"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginTop="0dp"
+                android:textSize="@dimen/txt_16sp"
+                android:text="0123456789"
+                android:id="@+id/tele"
+                android:layout_gravity="top|right"
+                android:gravity="center|right" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16sp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Email"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginTop="0dp"
+                android:textSize="@dimen/txt_16sp"
+                android:text="New Text"
+                android:id="@+id/email"
+                android:layout_gravity="top|right"
+                android:gravity="center|right" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16sp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Address"
+                android:id="@+id/textView4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginTop="0dp"
+                android:textSize="@dimen/txt_16sp"
+                android:text="New Text"
+                android:id="@+id/addr"
+                android:layout_gravity="top|right"
+                android:gravity="center|right" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/btnEdit"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="@dimen/pad_20dp"
+            android:background="#57fa90"
+            android:textColor="#f9f5f5"
+            android:shadowColor="#4f6252"
+            />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/D:/ParseProject/ParseStarterProject/src/main/res/layout/user_profile.xml -->

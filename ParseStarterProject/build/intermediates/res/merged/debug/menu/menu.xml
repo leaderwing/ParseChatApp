@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/chat"
+    android:icon="@drawable/ic_launcher"
+    android:title="Start chatting"
+    />
+    <item
+        android:icon="@drawable/ic_username"
+        android:title="Add friend"
+        android:id="@+id/add_friend"
+        />
+</menu><!-- From: file:/D:/ParseProject/ParseStarterProject/src/main/res/menu/menu.xml -->

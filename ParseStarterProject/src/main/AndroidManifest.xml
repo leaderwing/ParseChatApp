@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015-present, Parse, LLC.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the BSD-style license found in the
+  ~ LICENSE file in the root directory of this source tree. An additional grant
+  ~ of patent rights can be found in the PATENTS file in the same directory.
+  -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.parse.starter" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:protectionLevel="signature"
+        android:name="com.chatt.demo.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.chatt.demo.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" android:name="com.chatt.demo.ChattApp">
+        <activity
+            android:name="com.chatt.demo.Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.chatt.demo.Register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <activity
+            android:name="com.chatt.demo.UserList"
+            android:label="@string/app_name"
+            android:logo="@drawable/icon"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.chatt.demo.Chat"
+            android:label="@string/app_name"
+            android:logo="@drawable/icon"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:parentActivityName="com.chatt.demo.UserList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+        </activity>
+        <activity android:name="com.chatt.demo.UserProfile"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:label="BKChat"
+            android:parentActivityName="com.chatt.demo.UserList"
+            android:logo="@drawable/icon">
+
+
+        </activity>
+        <activity android:name="com.chatt.demo.EditProfile"
+
+            android:logo="@drawable/icon">
+
+
+        </activity>
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!--
+                  IMPORTANT: Change "com.parse.starter" to match your app's package name.
+                -->
+                <category android:name="com.chatt.demo" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
